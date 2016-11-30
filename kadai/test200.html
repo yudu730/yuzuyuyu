@@ -1,0 +1,85 @@
+﻿<html>
+<head>
+<title>入力画面</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<script type="text/javascript" src="queCon.js"></script>
+</head>
+<body onload="queCon()">
+<div id="header1"></div>
+<div id="parHeader2"><div id="header2">test200.アンケート</div></div>
+<div id="wrapper">
+	<form name="frmData" method="post" action="conScr.php">
+	<p class="borLine">情報入力</p>
+	<input type="text" name="frmId">:出席番号</input><br />
+	<div class="br"></div>
+	
+	
+	<!-- 性別 -->
+	<select name="sex">
+		<option value="">性別</option>
+		<option value="男">男</option>
+		<option value="女">女</option>
+	</select>
+	<br />
+	<div class="br"></div>
+	
+	
+	<!-- 血液型 -->
+	<select name="blood">
+		<option value="">血液型</option>
+		<option value="A">A型</option>
+		<option value="B">B型</option>
+		<option value="AB">AB型</option>
+		<option value="O">O型</option>
+	</select><br />
+	<div class="br"></div>
+	
+	
+	<!-- 質問１ -->
+	<div id="q1Con" class="borLine">質問1</div>
+	<div class="fltAni">
+		<p class="radio1">
+			<input type="radio" id="select1" name="q1" value="q1Sel1" checked=""><label for="select1" id="q1ConSel1"></label></input>
+			<input type="radio" id="select2" name="q1" value="q1Sel2"><label for="select2" id="q1ConSel2"></label></input>
+			<input type="radio" id="select3" name="q1" value="q1Sel3"><label for="select3" id="q1ConSel3"></label></input>
+		</p>
+	</div>
+	<br /><br />
+	
+	<!-- 質問２ -->
+	<div id="q2Con" class="borLine">質問2</div>
+	<div class="fltAni">
+		<p class="radio1">
+			<input type="radio" id="select4" name="q2" value="q2Sel1" checked=""><label for="select4" id="q2ConSel1"></label></input>
+			<input type="radio" id="select5" name="q2" value="q2Sel2"><label for="select5" id="q2ConSel2"></label></input>
+			<input type="radio" id="select6" name="q2" value="q2Sel3"><label for="select6" id="q2ConSel3"></label></input><br />
+		</p>
+	</div>
+	<br /><br />
+	
+	<!-- 質問３ -->
+	<div id="q3Con" class="borLine">質問3</div>
+	<div class="fltAni">
+		<p id="checkbox1">
+			<input type="checkbox" id="chk1" name="q3[]" value="q3Sel1"><label for="chk1" class="check_css" id="q3ConSel1"></label></input>
+			<input type="checkbox" id="chk2" name="q3[]" value="q3Sel2"><label for="chk2" class="check_css" id="q3ConSel2"></label></input>
+			<input type="checkbox" id="chk3" name="q3[]" value="q3Sel3"><label for="chk3" class="check_css" id="q3ConSel3"></label></input>
+			<input type="checkbox" id="chk4" name="q3[]" value="q3Sel4"><label for="chk4" class="check_css" id="q3ConSel4"></label></input>
+		</p>
+	</div>
+	<span class="br"></span>
+	<div class="fltAni">
+		<input type="submit" class="classname" value="送信">
+	</div>
+	</form>
+	
+	<button onclick="location.href='./creTbl.php'" class="button1">テーブル表示</button>
+</div>
+<div id="parFooter">
+<div id="footer">
+<p>d3-1 28</p>
+</div>
+</div>
+</body>
+
+</html>
