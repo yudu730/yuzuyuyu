@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+<title>グラフの作成</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body onload="main()">
+
+<form name="X_axis" method="post" action="charCon.php">
+<table border="1" style="margin-left:auto;margin-right:auto;">
+	<tr><th><p>横軸選択</p></th></tr>
+		<tr><td>
+			<input type="radio" name="frmAxis" value="sex">性別</input>
+			<input type="radio" name="frmAxis" value="blood">血液型</input>
+			<input type="radio" name="frmAxis" value="q1">問１</input>
+			<input type="radio" name="frmAxis" value="q2">問２</input><br />
+			<img src="axis.jpg"><br /><span style="font-size:10px;">軸のグループを選択します。</span>
+		</tr></td>
+	<tr><th><p>グループ化選択</p></th></tr>
+		<tr><td>
+			<input type="radio" name="frmGrp" value="sex">性別</input>
+			<input type="radio" name="frmGrp" value="blood">血液型</input>
+			<input type="radio" name="frmGrp" value="q1">問１</input>
+			<input type="radio" name="frmGrp" value="q2">問２</input><br /><br />
+			<img src="group.jpg"><br /><span style="font-size:10px;">グループ化する項目を選択します。</span><br /><br />
+		</tr></td>
+	<tr><td>
+		<input type="submit"  class="classname" value="送信">
+	</tr></td>
+</table>
+</form>
+
+
+</body>
+</html>
